@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
-*main - A c program that prints a line into the standard error
-*Return: 1
+ *main - A c program that prints a line into the standard error
+ *Return: always (1)
 */
 int main(void)
 {
