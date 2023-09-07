@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - C program that prints hello using printf
+ * main - C program that prints hello world
  * Return: 0
  */
 int main(void)
