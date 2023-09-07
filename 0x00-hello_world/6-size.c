@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Project six on c program
+ * main - A program that promotes the size of various computer types
  * Return 0
  */
 int main(void)
