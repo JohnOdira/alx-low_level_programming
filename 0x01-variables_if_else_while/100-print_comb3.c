@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
- *main - Entry point, print 00 to 99 using putchar
+ *main - Entry point, print 00 to 89 using putchar
  *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int tens;
-	int ones;
+	int ones = '0';
+	int tens = '0';
 
-	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
+	for (tens = '0'; tens <= '9'; tens++)
 	{
-		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
+		for (ones = '0'; ones <= '9'; ones++)
 		{
 			putchar(tens);
 			putchar(ones);
-			if (!(tens == '9' && ones == '8')) /*skip comma at end*/
+			if (!(ones == '9' && tens == '8'))
 			{
 				putchar(',');
 				putchar(' ');
