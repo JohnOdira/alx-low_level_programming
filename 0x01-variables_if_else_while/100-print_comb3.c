@@ -1,31 +1,28 @@
 #include <stdio.h>
 
 /**
-  * main - Prints the numbers from 00 to 99
-  *
-  * Return: Always (Success)
-  */
+ *main - Entry point, print 00 to 99 using putchar
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	int c, i;
+	int tens;
+	int ones;
 
-	c = i = '0';
-
-	for (c = '0'; c <= '9'; c++)
+	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
 		{
-			putchar(c);
-			putchar(i);
-
-			if ((c != '9') || (c == '9' && i != '9'))
+			putchar(tens);
+			putchar(ones);
+			if (!(tens == '9' && ones == '9')) /*skip comma at end*/
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
