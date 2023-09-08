@@ -10,7 +10,7 @@ int main(void)
 	int tens;
 	int ones;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
+	for (tens = '1'; tens <= '9'; tens++) /*print tens place*/
 	{
 		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
 		{
