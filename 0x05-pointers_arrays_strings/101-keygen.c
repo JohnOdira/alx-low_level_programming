@@ -4,6 +4,7 @@
 
 /**
  * main - Generates random valid passwords for program
+ * 101-crakme
  * Return: Always 0
  */
 
