@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Prints sum
@@ -17,8 +17,8 @@ int main(void)
 		if (r % 2 == 0)
 		sum += r;
 		p = r - p;
-		++q;
+		++i;
 	}
-	printf("%ld\n", sum)
+	printf("%ld\n", sum);
 	return (0);
 }
