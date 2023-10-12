@@ -20,7 +20,7 @@ switch (format[p])
 case 'c':
 printf("%s%c", sep, va_arg(list, int));
 break;
-case 'p':
+case 'i':
 printf("%s%d", sep, va_arg(list, int));
 break;
 case 'f':
