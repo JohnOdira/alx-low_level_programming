@@ -1,20 +1,19 @@
-#include <stdlib.h>
 #include "lists.h"
 
 /**
-* list_len – Gets numbers of length
-* @h: Points to lists
-*
-* Return: Always 1
-*/
-size_t list_len(const list_t *h)
-{
-size_t n = 0;
+ * list_len - Length
+ * @h: Points node
+ * Return: Number of pointer
+ */
 
-while (h)
+size_t list_len(const list_t *h);
 {
-n++;
-h = h->next;
-}
-return (n);
+	int p;
+
+	if (h == NULL)
+		return (0);
+
+	for (p = 1; h->next != NULL; p++)
+		h = h->next;
+	return (p);
 }
