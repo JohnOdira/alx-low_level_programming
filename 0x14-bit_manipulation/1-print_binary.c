@@ -33,13 +33,12 @@ check = n & divisor;
 if (check == divisor)
 {
 flag = 1;
-brian_putchar('1');
+_putchar('1');
 }
 else if (flag == 1 || divisor == 1)
 {
-brian_putchar('0');
+_putchar('0');
 }
 divisor >>= 1;
 }
 }
-
